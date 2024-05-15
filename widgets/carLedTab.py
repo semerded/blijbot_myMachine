@@ -35,7 +35,7 @@ class CarLedTab:
         self.currentEffectIndicator.setBorder(1, gFrame.Color.GRAY)
         
         # speed
-        self.speedSlider = gFrame.Slider((rect.rw(70), 20), 0.03, 0.5, gFrame.Color.AQUAMARINE, gFrame.Color.WHITE, startValue=0.1, reverse=True)
+        self.speedSlider = gFrame.Slider((rect.rw(70), 20), 0.01, 0.5, gFrame.Color.AQUAMARINE, gFrame.Color.WHITE, startValue=0.1, reverse=True)
         self.speedSlider.setKnob(13, gFrame.Color.RED)
         
         self.speedText = gFrame.Text("effect snelheid", "comic sans", rect.rw(10), gFrame.Color.WHITE)
