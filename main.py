@@ -42,7 +42,7 @@ def main():
             
             PAGE_LISTING[globalVars.currentScreen.value].place()
             
-            if gFrame.Interactions.isKeyReleased(pygame.K_ESCAPE):
+            if gFrame.Interactions.isMouseReleased(gFrame.mouseButton.rightMouseButton):
                 if globalVars.RPIconnected:
                     LED_MATRIX.erasePhysicalMatrix()
                 globalVars.programRunning = False
